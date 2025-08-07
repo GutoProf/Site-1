@@ -1,0 +1,144 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Estilos Gerais */
+body {
+    font-family: "Nunito", sans-serif;
+    line-height: 1.6;
+}
+.btn {
+    border-radius: 15px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: rgb(91, 91, 253);
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(107, 107, 253);
+}
+
+.btn-primary {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+}
+
+/* Container */
+#container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.logo img {
+    display: block;
+    width: 70px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    justify-self: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+
+nav a:hover {
+    color: gray;
+}
+
+.login {
+    display: flex;
+    justify-self: end;
+}
+/*Banner*/
+#banner{
+    margin: 0 auto;
+    text-align: center;
+}
+/* Formulário de Newsletter */
+.newsletter-form {
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.newsletter-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.newsletter-form form {
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-form .input {
+    width: 100%;
+    padding-left: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px 0 0 10px;
+}
+
+.newsletter-form .btn {
+    border-radius: 0 10px 10px 0;
+}
+
+/* Seção de Produtos */
+#produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.produto {
+    width: 23%;
+    margin-bottom: 20px;
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* Call to Action */
+.call-to-action {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0;
+    background: #f1f1f1;
+}
+
+footer p {
+    margin: 5px 0;
+}
