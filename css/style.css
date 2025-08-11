@@ -57,13 +57,21 @@ nav {
     gap: 30px;
     justify-self: center;
 }
-
-nav a {
-    text-decoration: none;
-    color: black;
-    transition: color 0.3s ease;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav li {
+    position: relative;
 }
 
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    transition: background 0.3s ease;
+}
 
 nav a:hover {
     color: gray;
@@ -73,6 +81,40 @@ nav a:hover {
     display: flex;
     justify-self: end;
 }
+
+/** Submenu */
+
+nav ul ul {    
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 180px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.5s ease;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+nav ul ul li a {
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+nav li:hover > ul {    
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
 /*Banner*/
 #banner{
     margin: 0 auto;
